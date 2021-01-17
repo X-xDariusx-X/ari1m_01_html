@@ -1,0 +1,33 @@
+<h1><u> Tercer Ejercicio </u><h1/>
+<h2> En un corral hay conejos y gallinas. Si contamos las cabezas hay 30, si contamos las patas hay 84. ¿Cuántos conejos y cuántas gallinas hay? </h2>
+<form>
+	Cabezas <input id="a" name="a"  value="30" placeholder="cabezas" onkeyup="calcular()" />
+	Patas <input id="b" name="b" value="84" placeholder="patas" onkeyup="calcular()"/>
+	<button onclick="calcular()"> Calcular </button>
+</form>
+<div id="c" style="
+	padding:15px;
+	background-color:grey;
+	">
+	Resultado
+</div>
+<div id="d" style="
+	padding:15px;
+	background-color:grey;
+	">
+	Resultado
+</div>
+<script>
+
+	function calcular(){
+		a=document.getElementById("a").value;
+		b=document.getElementById("b").value;
+		d=(b-(2*a))/2;
+		c=a-d;
+		document.getElementById('d').innerHTML= d +' Conejos';
+		document.getElementById('c').innerHTML= c +' Gallinas';
+		}calcular();
+</script>
+<?php
+	if(isset($_GET)) print_r($_GET);
+?>

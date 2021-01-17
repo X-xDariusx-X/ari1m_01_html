@@ -1,0 +1,26 @@
+<h1><u> Segundo Ejercicio </u><h1/>
+<h2> El lado de un rombo mide 10 cm y su diagonal menor 12 cm. Halla su área </h2>
+<form>
+	Diagonal <input id="a" name="a" value="12" placeholder="diagonal" onkeyup="calcular()" />
+	Lado <input id="b" name="b" value="10" placeholder="lado" onkeyup="calcular()"/>
+	<button onclick="calcular()"> Calcular </button>
+</form>
+<div id="d" style="
+	padding:15px;
+	background-color:cyan;
+	">
+	Resultado
+</div>
+<script>
+
+	function calcular(){
+		a=document.getElementById("a").value;
+		b=document.getElementById("b").value;
+		c=16*12/2;
+		d=c;
+		document.getElementById('d').innerHTML= d +' cm^2';
+		}calcular();
+</script>
+<?php
+	if(isset($_GET)) print_r($_GET);
+?>

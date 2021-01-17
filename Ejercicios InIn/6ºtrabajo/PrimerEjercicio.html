@@ -1,0 +1,27 @@
+<h1><u> Primer Ejercicio </u></h1>
+<h2> Halla el área de un rectángulo cuya diagonal mide 10 cm y uno de sus lados 6 cm</h2> 
+<form>
+	Diagonal <input id="a" name="a" value="10" placeholder="diagonal" onkeyup="calcular()" />
+	Lado <input id="b" name="b" value="6" placeholder="lado" onkeyup="calcular()"/>
+	<button onclick="calcular()"> Calcular </button>
+</form>
+<div id="d" style="
+	padding:15px;
+	background-color:green;
+	">
+	Resultado
+</div>
+<script>
+
+	function calcular(){
+		a=document.getElementById("a").value;
+		b=document.getElementById("b").value;
+		c=(a*a)-(b*b);
+		d=b*c/8;
+		document.getElementById('d').innerHTML= d +' cm^2';
+		}calcular();
+</script>
+<?php
+	if(isset($_GET)) print_r($_GET);
+?>
+
