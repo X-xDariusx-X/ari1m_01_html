@@ -1,25 +1,49 @@
+<h1><center><u>Trabajo 2</u></center></h1>
+<h3><center>Ordena alfabéticamente a tus compañeros por su nombre de pila y muestra al que ocupe el quinto lugar en la lista: </center></h3>
+<center>
 <?php
-$nombres =[
-	'Andrei',
-	'Fabián',
-	'Héctor',
-	'Gabi',
-	'Nury',
-	'Agustina',
-	'Matheu',
-	'Dani',
-	'Ismael',
-	'Pepe',
-	'Javier',
-	'Rodras',
-	'Tregallo',
-	'Alfonso',
-	'Darius',
-	'Ivan',
-	'Tejería',
-];
+$nombres = array("Andrei",
+					"Fabi",
+					"Héctor",
+					"Gabi",
+					"Nury",
+					"Agus",
+					"Mathew",
+					"Dani",
+					"Isma",
+					"Pepe",
+					"Sañudo",
+					"Rodras",
+					"Tresgo",
+					"Fonso",
+					"Darius",
+					"Ivi",
+					"Teje");
 //Ordenados alfabeticamente
-echo "Quinto lugar en orden alfabetico <br>";
 sort($nombres);
-var_export($nombres)[5-1];
+echo $nombres[5-1];
 ?>
+</center>
+
+<div id="r"></div>
+<script>
+	nombres =["Andrei",
+				"Fabi",
+				"Héctor",
+				"Gabi",
+				"Nury",
+				"Agus",
+				"Mathew",
+				"Dani",
+				"Isma",
+				"Pepe",
+				"Sañudo",
+				"Rodras",
+				"Tresgo",
+				"Fonso",
+				"Darius",
+				"Ivi",
+				"Teje",];
+			nombres.sort();
+			document.getElementById('r').innerHTML =nombres[5-1];
+</script>
