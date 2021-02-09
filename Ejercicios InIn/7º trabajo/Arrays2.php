@@ -56,3 +56,14 @@
 			echo $_GET['nombres'];
 		?>
 </center>
+
+<div style="text-align:center" id="nombres"></div>
+<div style="text-align:center" id="puesto"></div>
+<script type="text/javascript">
+function ver(n) {
+         document.getElementById("subseccion"+n).style.display="block"
+         }
+function ocultar(n) {
+         document.getElementById("subseccion"+n).style.display="none"
+         }
+</script>

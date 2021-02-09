@@ -51,9 +51,10 @@ echo "Sitio turistico random: <br>";
 echo $Turismo[rand(0,16)];
 ?>
 </center>
+</br>
 
-<div id="nombres"></div>
-<div id="Turismo"></div>
+<div style="text-align:center" id="nombres"></div>
+<div style="text-align:center" id="Turismo"></div>
 <script>
 	nombres = [
 		'Andrei',

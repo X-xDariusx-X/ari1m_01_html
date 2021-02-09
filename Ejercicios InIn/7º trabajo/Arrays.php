@@ -25,7 +25,7 @@ echo $nombres[5-1];
 ?>
 </center>
 
-<div id="r"></div>
+<div style="text-align:center" id="r"></div>
 <script>
 	nombres =["Andrei",
 				"Fabi",

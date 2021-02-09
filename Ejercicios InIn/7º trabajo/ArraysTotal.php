@@ -84,8 +84,9 @@ sort($nombres);
 echo $nombres[5-1];
 ?>
 </center>
+</br>
 
-<div id="r"></div>
+<div style="text-align:center" id="r"></div>
 <script>
 	nombres =["Andrei",
 				"Fabi",
@@ -162,9 +163,11 @@ echo "Sitio turistico random: <br>";
 echo $Turismo[rand(0,16)];
 ?>
 </center>
+</br>
+</br>
 
-<div id="nombres"></div>
-<div id="Turismo"></div>
+<div style="text-align:center" id="nombres"></div>
+<div style="text-align:center" id="Turismo"></div>
 <script>
 	nombres = [
 		'Andrei',
