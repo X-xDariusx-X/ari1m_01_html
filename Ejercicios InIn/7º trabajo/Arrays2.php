@@ -41,7 +41,7 @@
 	?>
 	<form>
 		<button>Enviar</button>
-		<select name="nombres">
+		<select name="nombres" id="nombres" onchange="lee_dato()">
 		<?php
 			foreach ($nombres as $i=>$n)
 			echo '<option value="'.$puesto[$i].'" '
@@ -60,10 +60,9 @@
 <div style="text-align:center" id="nombres"></div>
 <div style="text-align:center" id="puesto"></div>
 <script type="text/javascript">
-function ver(n) {
-         document.getElementById("subseccion"+n).style.display="block"
-         }
-function ocultar(n) {
-         document.getElementById("subseccion"+n).style.display="none"
-         }
+function lee_dato(){
+dato = document.getElementById("nombres").value;
+console.log(dato);
+document.getElementById('dato').innerHTML =dato;
+}
 </script>
