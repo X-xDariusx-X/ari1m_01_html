@@ -1,4 +1,7 @@
 <body style="background-color:#F1F19C;">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maxium-scale=2">
+</head>
 <h1><center><u>ARRAYS Y CONTROL</u></center></h1>
 <h2><center><u>Trabajo 1</u></center></h2>
 <h3><center>Crea un desplegable con los nombres de tus compañeros y, como resultado de la selección, obtendrás en qué puesto se sienta:</center></h3>
@@ -59,6 +62,17 @@
 		?>
 </center>
 </br>
+
+<div style="text-align:center" id="puesto"></div>
+<div style="text-align:center" id="dato"></div>
+<script type="text/javascript">
+function lee_dato(){
+dato = document.getElementById("nombres").value;
+console.log(dato);
+document.getElementById("dato").innerHTML =dato;
+}
+</script>
+
 
 <h2><center><u>Trabajo 2</u></center></h2>
 <h3><center>Ordena alfabéticamente a tus compañeros por su nombre de pila y muestra al que ocupe el quinto lugar en la lista: </center></h3>
